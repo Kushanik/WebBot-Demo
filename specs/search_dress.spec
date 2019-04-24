@@ -163,6 +163,66 @@ Tags: search
 
 
 
+
+## Search Evening Dress by inputing text directly to the text box in locators file
+
+* Input Text
+   |Step Name         |Does Element Retrieve From Locators File?|If Yes, Sheet Name|If Yes, Element Name|If No, Element Locator Strategy|If No, Element Data Store Type|If No, Element Data Store Variable Name|Does Input Text Retrieve From Data Store?|If Yes, Data Store Type|If Yes, Data Store Variable Name|If No, Text                 |
+   |------------------|-----------------------------------------|------------------|--------------------|-------------------------------|------------------------------|---------------------------------------|-----------------------------------------|-----------------------|--------------------------------|----------------------------|
+   |Set search text as|yes                                      |DressPage         |txt_search_bar      |                               |                              |                                       |no                                       |                       |                                |Printed Chiffon Dress       |
+
+* Click Element
+   |Step Name              |Does Element Retrieve From Locators File?|If Yes, Sheet Name|If Yes, Element Name|If No, Element Locator Strategy|If No, Element Data Store Type|If No, Element Data Store Variable Name|
+   |-----------------------|-----------------------------------------|------------------|--------------------|-------------------------------|------------------------------|---------------------------------------|
+   |Click on Search button |yes                                      |DressPage         |btn_search          |                               |                              |                                       |
+
+* Wait Until Element Is Visible On The Page
+   |Step Name                      |Does Element Retrieve From Locators File?|If Yes, Sheet Name|If Yes, Element Name      |If No, Element Locator Strategy|If No, Element Data Store Type|If No, Element Data Store Variable Name|
+   |-------------------------------|-----------------------------------------|------------------|--------------------------|-------------------------------|------------------------------|---------------------------------------|
+   |Search result should be visible|yes                                      |DressPage          |lbl_search_result_locator |                               |                              |                                       |
+
+
+
+
+## Search Evening Dress by inputing text saved in data store to the text box in data store
+
+* Save Test Data From Excel To Data Stores
+   |Sheet Name|Key Name         |Data Store Type|Data Store Variable Name|
+   |----------|-----------------|---------------|------------------------|
+   |SearchData|eveningdDress    |scenario       |searchVal               |
+
+* Save the values inside data stores
+   |Data Store Type|Data Store Variable Name  |Value To Be Stored  |
+   |---------------|--------------------------|--------------------|
+   |scenario       |searchEveningDressTextBox |search_query_top    |
+
+* Read the values from data stores
+   |Data Store Type|Data Store Variable Name |
+   |---------------|-------------------------|
+   |scenario       |searchEveningDressTextBox|
+
+* Input Text
+   |Step Name         |Does Element Retrieve From Locators File?|If Yes, Sheet Name|If Yes, Element Name|If No, Element Locator Strategy|If No, Element Data Store Type|If No, Element Data Store Variable Name|Does Input Text Retrieve From Data Store?|If Yes, Data Store Type|If Yes, Data Store Variable Name|If No, Text                 |
+   |------------------|-----------------------------------------|------------------|--------------------|-------------------------------|------------------------------|---------------------------------------|-----------------------------------------|-----------------------|--------------------------------|----------------------------|
+   |Set search text as|no                                       |                  |                    |ID                             |scenario                      |searchEveningDressTextBox              |yes                                      |scenario               |searchVal                       |                            |
+
+* Click Element
+   |Step Name              |Does Element Retrieve From Locators File?|If Yes, Sheet Name|If Yes, Element Name|If No, Element Locator Strategy|If No, Element Data Store Type|If No, Element Data Store Variable Name|
+   |-----------------------|-----------------------------------------|------------------|--------------------|-------------------------------|------------------------------|---------------------------------------|
+   |Click on Search button |yes                                      |DressPage         |btn_search          |                               |                              |                                       |
+
+* Wait Until Element Is Visible On The Page
+   |Step Name                      |Does Element Retrieve From Locators File?|If Yes, Sheet Name|If Yes, Element Name      |If No, Element Locator Strategy|If No, Element Data Store Type|If No, Element Data Store Variable Name|
+   |-------------------------------|-----------------------------------------|------------------|--------------------------|-------------------------------|------------------------------|---------------------------------------|
+   |Search result should be visible|yes                                      |DressPage         |lbl_search_result_locator |                               |                              |                                       |
+
+* Validate Element's Visibility On The Page
+   |Step Name                      |Does Element Retrieve From Locators File?|If Yes, Sheet Name|If Yes, Element Name      |If No, Element Locator Strategy|If No, Element Data Store Type|If No, Element Data Store Variable Name|Is Visible?|
+   |-------------------------------|-----------------------------------------|------------------|--------------------------|-------------------------------|------------------------------|---------------------------------------|-----------|
+   |Search result should be visible|yes                                      |DressPage         |lbl_search_result_locator |                               |                              |                                       |y          |
+
+
+
 _____________________________
 
 * Logout From The Application
