@@ -2,10 +2,10 @@
 
 <pre>
 Project Name    : MaxSoft-WebBot-Demo
-Developer       : Osanda Deshan
+Developer       : Kushani Karunarathne
 Version         : 1.0.0
-Date            : 13/04/2019
-Time            : 13:02
+Date            : 24/04/2019
+Time            : 00:30
 Description     : This is an executable specification file
 </pre>
 
@@ -14,7 +14,7 @@ Tags: search
 
 
 
-* Login To The Application Using Username By Referring The Key "osandaEmail" and Password By Referring The Key "osandaPassword". Then Validate The Account Name By Referring The Key "osandaProfileName" In The Test Data Excel File.
+* Login To The Application Using Username By Referring The Key "kushaniEmail" and Password By Referring The Key "kushaniPassword". Then Validate The Account Name By Referring The Key "osandaProfileName" In The Test Data Excel File.
 
 
 
