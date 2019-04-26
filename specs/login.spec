@@ -35,10 +35,10 @@ Tags: login
    |Submit button should be visible         |yes                                      |LoginPage         |btn_submit          |                               |                              |                                       |y          |
 
 * Input Text
-   |Step Name         |Does Element Retrieve From Locators File?|If Yes, Sheet Name|If Yes, Element Name|If No, Element Locator Strategy|If No, Element Data Store Type|If No, Element Data Store Variable Name|Does Input Text Retrieve From Data Store?|If Yes, Data Store Type|If Yes, Data Store Variable Name|If No, Text          |
-   |------------------|-----------------------------------------|------------------|--------------------|-------------------------------|------------------------------|---------------------------------------|-----------------------------------------|-----------------------|--------------------------------|---------------------|
-   |Set email as      |yes                                      |LoginPage         |txt_email           |                               |                              |                                       |no                                       |                       |                                |osanda@mailinator.com|
-   |Set password as   |yes                                      |LoginPage         |txt_password        |                               |                              |                                       |no                                       |                       |                                |1qaz2wsx@            |
+   |Step Name         |Does Element Retrieve From Locators File?|If Yes, Sheet Name|If Yes, Element Name|If No, Element Locator Strategy|If No, Element Data Store Type|If No, Element Data Store Variable Name|Does Input Text Retrieve From Data Store?|If Yes, Data Store Type|If Yes, Data Store Variable Name|If No, Text                          |
+   |------------------|-----------------------------------------|------------------|--------------------|-------------------------------|------------------------------|---------------------------------------|-----------------------------------------|-----------------------|--------------------------------|-------------------------------------|
+   |Set email as      |yes                                      |LoginPage         |txt_email           |                               |                              |                                       |no                                       |                       |                                |kushani.karunarathne@mailinator.com  |
+   |Set password as   |yes                                      |LoginPage         |txt_password        |                               |                              |                                       |no                                       |                       |                                |1qaz!QAZ                             |
 
 * Click Element
    |Step Name              |Does Element Retrieve From Locators File?|If Yes, Sheet Name|If Yes, Element Name|If No, Element Locator Strategy|If No, Element Data Store Type|If No, Element Data Store Variable Name|
@@ -46,9 +46,9 @@ Tags: login
    |Click on Submit button |yes                                      |LoginPage         |btn_submit          |                               |                              |                                       |
 
 * Save Test Data From Excel To Data Stores
-   |Sheet Name|Key Name         |Data Store Type|Data Store Variable Name|
-   |----------|-----------------|---------------|------------------------|
-   |LoginData |osandaProfileName|scenario       |profileNameVal          |
+   |Sheet Name|Key Name          |Data Store Type|Data Store Variable Name|
+   |----------|------------------|---------------|------------------------|
+   |LoginData |kushaniProfileName|scenario       |profileNameVal          |
 
 * Replace Element Locator Placeholder And Save To Data Store
    |Step Name                |Sheet Name|Element Name      |Placeholder Text|Is Replacement Text Retrieve From Data Store |If Yes, Data Store Type|If Yes, Data Store Variable Name|If No, Replacement Text |Data Store Type To Save Final Locator|Data Store Variable Name To Save Final Locator|
@@ -77,10 +77,10 @@ Tags: login
    |Submit button should be visible         |yes                                      |LoginPage         |btn_submit          |                               |                              |                                       |y          |
 
 * Input Text
-   |Step Name         |Does Element Retrieve From Locators File?|If Yes, Sheet Name|If Yes, Element Name|If No, Element Locator Strategy|If No, Element Data Store Type|If No, Element Data Store Variable Name|Does Input Text Retrieve From Data Store?|If Yes, Data Store Type|If Yes, Data Store Variable Name|If No, Text          |
-   |------------------|-----------------------------------------|------------------|--------------------|-------------------------------|------------------------------|---------------------------------------|-----------------------------------------|-----------------------|--------------------------------|---------------------|
-   |Set email as      |yes                                      |LoginPage         |txt_email           |                               |                              |                                       |no                                       |                       |                                |osanda@mailinator.com|
-   |Set password as   |yes                                      |LoginPage         |txt_password        |                               |                              |                                       |no                                       |                       |                                |1qaz2wsx@            |
+   |Step Name         |Does Element Retrieve From Locators File?|If Yes, Sheet Name|If Yes, Element Name|If No, Element Locator Strategy|If No, Element Data Store Type|If No, Element Data Store Variable Name|Does Input Text Retrieve From Data Store?|If Yes, Data Store Type|If Yes, Data Store Variable Name|If No, Text                        |
+   |------------------|-----------------------------------------|------------------|--------------------|-------------------------------|------------------------------|---------------------------------------|-----------------------------------------|-----------------------|--------------------------------|-----------------------------------|
+   |Set email as      |yes                                      |LoginPage         |txt_email           |                               |                              |                                       |no                                       |                       |                                |kushani.karunarathne@mailinator.com|
+   |Set password as   |yes                                      |LoginPage         |txt_password        |                               |                              |                                       |no                                       |                       |                                |1qaz!QAZ                           |
 
 * Click Element
    |Step Name              |Does Element Retrieve From Locators File?|If Yes, Sheet Name|If Yes, Element Name|If No, Element Locator Strategy|If No, Element Data Store Type|If No, Element Data Store Variable Name|
@@ -88,14 +88,14 @@ Tags: login
    |Click on Submit button |yes                                      |LoginPage         |btn_submit          |                               |                              |                                       |
 
 * Save Test Data From Excel To Data Stores
-   |Sheet Name|Key Name         |Data Store Type|Data Store Variable Name|
-   |----------|-----------------|---------------|------------------------|
-   |LoginData |osandaProfileName|scenario       |profileNameVal          |
+   |Sheet Name|Key Name          |Data Store Type|Data Store Variable Name|
+   |----------|------------------|---------------|------------------------|
+   |LoginData |kushaniProfileName|scenario       |profileNameVal          |
 
 * Replace Element Locator Placeholder And Save To Data Store
    |Step Name                |Sheet Name|Element Name      |Placeholder Text|Is Replacement Text Retrieve From Data Store |If Yes, Data Store Type|If Yes, Data Store Variable Name|If No, Replacement Text |Data Store Type To Save Final Locator|Data Store Variable Name To Save Final Locator|
    |-------------------------|----------|------------------|----------------|---------------------------------------------|-----------------------|--------------------------------|------------------------|-------------------------------------|----------------------------------------------|
-   |Get profile name locator |HomePage  |lbl_profile_name  |profileName     |no                                           |                       |                                |Osanda Nimalarathna     |scenario                             |currentProfileNameLocator                     |
+   |Get profile name locator |HomePage  |lbl_profile_name  |profileName     |no                                           |                       |                                |Kushani Karunarathne    |scenario                             |currentProfileNameLocator                     |
 
 * Wait Until Element Is Visible On The Page
    |Step Name                      |Does Element Retrieve From Locators File?|If Yes, Sheet Name|If Yes, Element Name|If No, Element Locator Strategy|If No, Element Data Store Type|If No, Element Data Store Variable Name|
